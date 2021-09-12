@@ -1,0 +1,79 @@
+{% extends "base_second.html" %}
+
+{% block extrahead %}
+	<!--This two was missed in base-->
+    <link href="../pages/assets/lib/owl.carousel/owl.carousel.css" rel="stylesheet">
+    <link href="../pages/assets/lib/lightbox2/css/lightbox.min.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+      <!-- ============================================-->
+      <!-- Preloader ==================================-->
+      <div class="preloader" id="preloader">
+        <div class="loader">
+          <div class="line-scale-pulse-out-rapid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div><!-- ============================================-->
+      <!-- End of Preloader ===========================-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="bg-light pt-8 pb-7 pt-lg-6 pb-lg-5 pt-xl-8 pb-xl-5">
+        <div class="container">
+          <div class="row">
+			  	
+            <div class="col-lg-6 col-xl-6">
+              <h1 class="fs-3 fs-sm-3">Openings</h1>
+              <p class="lead mb-0 fs-0">
+				We are always looking for interns, new students, postdocs, and staff scientists to join our highly talented group. If you are highly motivated, creative, and interested in machine learning, statistical genetics, and human medical and population genetics, please reach out. 
+              </p>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+      
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0">
+        <div class="container">
+          <div class="row justify-content-between">
+            
+            <div class="col-lg-10">
+             
+              <div class="fancy-tab">
+                <div class="nav-bar mt-3">
+                  <div class="nav-bar-item active" style="font-size:1em;">Postdocs</div>
+                  <div class="nav-bar-item" style="font-size:1em;">Staff scientists</div>
+                  <div class="nav-bar-item" style="font-size:1em;">New students</div>
+                  <div class="nav-bar-item" style="font-size:1em;">Interns</div>
+                </div>
+                <div class="tab-contents pb-7">
+                  <div class="tab-content active">
+                    <p class="fs-0">Duis ac facilisis mauris. Pellentesque leo tortor, maximus sed gravida dapibus, suscipit non nisi. Duis ultrices diam a maximus imperdiet. Nam eu purus a erat tristique ornare. Donec condimentum tristique diam eu congue.</p>
+                  </div>
+                  <div class="tab-content">
+                    <p class="fs-0">Nullam sed tempus mauris, vitae pretium nibh. Nam pretium diam id massa mollis pretium. Aenean lacus massa, tristique id mauris ac, sollicitudin auctor neque. Cras laoreet nunc nibh, ac tristique orci rutrum quis. Nam luctus, sapien ligula finibus turpis.</p>
+                  </div>
+                  <div class="tab-content">
+                    <p class="fs-0">Vestibulum convallis diam id nibh tempus, ac scelerisque nulla congue. Cras laoreet nunc nibh, ac tristique orci rutrum quis. Sed eu tellus pharetra, scelerisque nulla in, vehicula libero. Curabitur interdum nec metus ante sed luctus.</p>
+                  </div>
+                  <div class="tab-content">
+                    <p class="fs-0">Intern</p>
+                  </div>
+                </div>
+              </div>
+             
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+{% endblock %}

@@ -1,0 +1,32 @@
+site_name: Research group name
+# site_url: https://sourcefoundry.org/cinder/
+# site_author: Christopher Simpkins
+# site_description: "A clean, responsive theme for static documentation websites that are generated with MkDocs"
+# repo_url: "https://github.com/chrissimpkins/cinder"
+# copyright: "Cinder is licensed under the <a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'>MIT license</a>"
+
+theme:
+  name: null
+  #custom_dir: sparrow-v1.6.2
+  custom_dir: sparrow-v1.7.1
+  colorscheme: github
+  highlightjs: true
+  # custom theme configs
+  navigation_depth: 2
+  shortcuts:
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
+
+
+nav:
+  - Home: index.md
+  - Projects: projects.md
+  - Team: team.md
+  - Publications: publications.md
+  - Contact: contact.md
+  - Join us: job_openings.md
+
+markdown_extensions:
+  - admonition
