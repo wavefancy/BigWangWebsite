@@ -9,6 +9,9 @@ theme:
   name: null
   #custom_dir: sparrow-v1.6.2
   custom_dir: sparrow-v1.7.1
+  # Static files
+  static_templates:
+    - 404.html
   colorscheme: github
   highlightjs: true
   # custom theme configs
@@ -23,6 +26,7 @@ theme:
 nav:
   - Home: index.md
   - Projects: projects.md
+  - 研究方向: projects_cn.md
   - Team: team.md
   - Publications: publications.md
   - Contact: contact.md

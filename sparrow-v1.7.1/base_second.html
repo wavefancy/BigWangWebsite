@@ -16,7 +16,26 @@
   <!-- ===============================================-->
   <!--    Favicons-->
   <!-- ===============================================-->
-  {% if page and page.is_homepage %} 
+  {% if (page and page.is_homepage) or self._TemplateReference__context.name == '404.html' %} 
+	  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/pages/assets/img/favicons/apple-touch-icon.png'|url }}">
+	  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/pages/assets/img/favicons/favicon-32x32.png'|url }}">
+	  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/pages/assets/img/favicons/favicon-16x16.png '|url }}">
+	  <link rel="shortcut icon" type="image/x-icon" href="{{ '/pages/assets/img/favicons/favicon.ico'|url }}">
+	  <link rel="manifest" href="{{ '/pages/assets/img/favicons/manifest.json'|url }}">
+	  <meta name="msapplication-TileImage" content="{{ '/pages/assets/img/favicons/mstile-150x150.png'|url }}">
+	  <meta name="theme-color" content="#ffffff">
+
+	  <!-- ===============================================-->
+	  <!--    Stylesheets-->
+	  <!-- ===============================================-->
+	  <link href="{{ '/pages/assets/lib/loaders.css/loaders.min.css'|url }}" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900"
+		rel="stylesheet">
+	  <link href="{{ '/pages/assets/lib/fancybox/jquery.fancybox.min.css'|url }}" rel="stylesheet">
+	  <link href="{{ '/pages/assets/css/theme.css'|url }}" rel="stylesheet">
+  {% endif %}
+  
+  {% if page and not page.is_homepage %} 
 	  <link rel="apple-touch-icon" sizes="180x180" href="{{ './pages/assets/img/favicons/apple-touch-icon.png'|url }}">
 	  <link rel="icon" type="image/png" sizes="32x32" href="{{ './pages/assets/img/favicons/favicon-32x32.png'|url }}">
 	  <link rel="icon" type="image/png" sizes="16x16" href="{{ './pages/assets/img/favicons/favicon-16x16.png '|url }}">
@@ -33,25 +52,6 @@
 		rel="stylesheet">
 	  <link href="{{ './pages/assets/lib/fancybox/jquery.fancybox.min.css'|url }}" rel="stylesheet">
 	  <link href="{{ './pages/assets/css/theme.css'|url }}" rel="stylesheet">
-  {% endif %}
-  
-  {% if page and not page.is_homepage %} 
-	  <link rel="apple-touch-icon" sizes="180x180" href="{{ '../pages/assets/img/favicons/apple-touch-icon.png'|url }}">
-	  <link rel="icon" type="image/png" sizes="32x32" href="{{ '../pages/assets/img/favicons/favicon-32x32.png'|url }}">
-	  <link rel="icon" type="image/png" sizes="16x16" href="{{ '../pages/assets/img/favicons/favicon-16x16.png '|url }}">
-	  <link rel="shortcut icon" type="image/x-icon" href="{{ '../pages/assets/img/favicons/favicon.ico'|url }}">
-	  <link rel="manifest" href="{{ '../pages/assets/img/favicons/manifest.json'|url }}">
-	  <meta name="msapplication-TileImage" content="{{ '../pages/assets/img/favicons/mstile-150x150.png'|url }}">
-	  <meta name="theme-color" content="#ffffff">
-
-	  <!-- ===============================================-->
-	  <!--    Stylesheets-->
-	  <!-- ===============================================-->
-	  <link href="{{ '../pages/assets/lib/loaders.css/loaders.min.css'|url }}" rel="stylesheet">
-	  <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900"
-		rel="stylesheet">
-	  <link href="{{ '../pages/assets/lib/fancybox/jquery.fancybox.min.css'|url }}" rel="stylesheet">
-	  <link href="{{ '../pages/assets/css/theme.css'|url }}" rel="stylesheet">
   {% endif %}
   
   <style>
@@ -86,12 +86,7 @@
     data-zanim-trigger="scroll" data-exclusive="true">
     <div class="fancynavbar-togglerbar bg-black">
 		
-		{% if page and page.is_homepage %}
-			<a class="fancynavbar-brand" href="index.html">
-		{% endif %}
-		{% if page and not page.is_homepage %} 
-			<a class="fancynavbar-brand" href="../index.html">
-		{% endif %}
+		<a class="fancynavbar-brand" href="/index.html">
 		<img
           class="fancynavbar-brand-img" src="{{ '../wallace/images/imageonline-co-textimage_corben700.png'|url }}" alt="" width="30" height="30"
           data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}'
@@ -204,7 +199,7 @@
         <div class="col-lg-4 text-lg-right order-lg-2 mt-2 mt-lg-0">
           <p class="fs--1 text-uppercase ls font-weight-bold mb-0">Made with<span
               class="text-danger fas fa-heart mx-1"></span>by <a class="text-600"
-              href="#">Wallace Wang</a></p>
+              href="#">Wang lab team</a></p>
         </div>
       </div>
     </div>
@@ -259,53 +254,29 @@
   <!-- ===============================================-->
   <!--    JavaScripts-->
   <!-- ===============================================-->
-  {% if page and not page.is_homepage %} 
-	  <script src="{{ '../pages/assets/js/jquery.min.js'|url }}"></script>
-	  <script src="{{ '../pages/assets/js/popper.min.js'|url }}"></script>
-	  <script src="{{ '../pages/assets/js/bootstrap.js'|url }}"></script>
-	  <script src="{{ '../pages/assets/js/plugins.js'|url }}"></script>
-	  <script src="{{ '../pages/assets/lib/loaders.css/loaders.css.js'|url }}"></script>
-	  <script src="{{ '../pages/assets/js/stickyfill.min.js'|url }}"></script>
-	  <script src="{{ '../pages/assets/lib/is_js/is.min.js'|url }}"></script>
-	  <script src="{{ '../pages/assets/lib/jtap/jquery.tap.js'|url }}"></script>
-	  <script src="{{ '../pages/assets/js/rellax.min.js'|url }}"></script>
-	  <script src="{{ '../pages/assets/lib/fancybox/jquery.fancybox.min.js'|url }}"></script>
-	  <script src="{{ '../pages/assets/lib/isotope-layout/isotope.pkgd.min.js'|url }}"></script>
-	  <script src="{{ '../pages/assets/lib/isotope-packery/packery-mode.pkgd.min.js'|url }}"></script>
-	  <script src="{{ '../pages/assets/js/theme.js'|url }}"></script>
-	  <!--wavefancy@gmail.com-->
-	  <!--<script src="{{ '../js/base.js'|url }}"></script>-->
-	  
-	  <script src="../pages/assets/lib/owl.carousel/owl.carousel.js"></script>
-	  <script src="../pages/assets/lib/lightbox2/js/lightbox.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
-	  <script src="../pages/assets/js/progressbar.min.js"></script>
-	  <script src="../pages/assets/js/typed.js"></script>
-  {% endif %}
-  
-  {% if page and page.is_homepage %} 
-	  <script src="{{ './pages/assets/js/jquery.min.js'|url }}"></script>
-	  <script src="{{ './pages/assets/js/popper.min.js'|url }}"></script>
-	  <script src="{{ './pages/assets/js/bootstrap.js'|url }}"></script>
-	  <script src="{{ './pages/assets/js/plugins.js'|url }}"></script>
-	  <script src="{{ './pages/assets/lib/loaders.css/loaders.css.js'|url }}"></script>
-	  <script src="{{ './pages/assets/js/stickyfill.min.js'|url }}"></script>
-	  <script src="{{ './pages/assets/lib/is_js/is.min.js'|url }}"></script>
-	  <script src="{{ './pages/assets/lib/jtap/jquery.tap.js'|url }}"></script>
-	  <script src="{{ './pages/assets/js/rellax.min.js'|url }}"></script>
-	  <script src="{{ './pages/assets/lib/fancybox/jquery.fancybox.min.js'|url }}"></script>
-	  <script src="{{ './pages/assets/lib/isotope-layout/isotope.pkgd.min.js'|url }}"></script>
-	  <script src="{{ './pages/assets/lib/isotope-packery/packery-mode.pkgd.min.js'|url }}"></script>
-	  <script src="{{ './pages/assets/js/theme.js'|url }}"></script>
+ 
+	  <script src="{{ '/pages/assets/js/jquery.min.js'|url }}"></script>
+	  <script src="{{ '/pages/assets/js/popper.min.js'|url }}"></script>
+	  <script src="{{ '/pages/assets/js/bootstrap.js'|url }}"></script>
+	  <script src="{{ '/pages/assets/js/plugins.js'|url }}"></script>
+	  <script src="{{ '/pages/assets/lib/loaders.css/loaders.css.js'|url }}"></script>
+	  <script src="{{ '/pages/assets/js/stickyfill.min.js'|url }}"></script>
+	  <script src="{{ '/pages/assets/lib/is_js/is.min.js'|url }}"></script>
+	  <script src="{{ '/pages/assets/lib/jtap/jquery.tap.js'|url }}"></script>
+	  <script src="{{ '/pages/assets/js/rellax.min.js'|url }}"></script>
+	  <script src="{{ '/pages/assets/lib/fancybox/jquery.fancybox.min.js'|url }}"></script>
+	  <script src="{{ '/pages/assets/lib/isotope-layout/isotope.pkgd.min.js'|url }}"></script>
+	  <script src="{{ '/pages/assets/lib/isotope-packery/packery-mode.pkgd.min.js'|url }}"></script>
+	  <script src="{{ '/pages/assets/js/theme.js'|url }}"></script>
 	  <!--wavefancy@gmail.com-->
 	  <!--<script src="{{ './js/base.js'|url }}"></script>-->
 	  
-	  <script src="./pages/assets/lib/owl.carousel/owl.carousel.js"></script>
-	  <script src="./pages/assets/lib/lightbox2/js/lightbox.min.js"></script>
+	  <script src="/pages/assets/lib/owl.carousel/owl.carousel.js"></script>
+	  <script src="/pages/assets/lib/lightbox2/js/lightbox.min.js"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
-	  <script src="./pages/assets/js/progressbar.min.js"></script>
-	  <script src="./pages/assets/js/typed.js"></script>
-  {% endif %}
+	  <script src="/pages/assets/js/progressbar.min.js"></script>
+	  <script src="/pages/assets/js/typed.js"></script>
+	  
 </body>
 
 </html>

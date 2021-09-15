@@ -14,22 +14,27 @@
   <!-- ===============================================-->
   <!--    Favicons-->
   <!-- ===============================================-->
-  <link rel="apple-touch-icon" sizes="180x180" href="/pages/assets/img/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/pages/assets/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/pages/assets/img/favicons/favicon-16x16.png ">
-  <link rel="shortcut icon" type="image/x-icon" href="/pages/assets/img/favicons/favicon.ico">
-  <link rel="manifest" href="/pages/assets/img/favicons/manifest.json">
-  <meta name="msapplication-TileImage" content="/pages/assets/img/favicons/mstile-150x150.png">
-  <meta name="theme-color" content="#ffffff">
+  
+  
+   
+	  <link rel="apple-touch-icon" sizes="180x180" href="../pages/assets/img/favicons/apple-touch-icon.png">
+	  <link rel="icon" type="image/png" sizes="32x32" href="../pages/assets/img/favicons/favicon-32x32.png">
+	  <link rel="icon" type="image/png" sizes="16x16" href="../pages/assets/img/favicons/favicon-16x16.png ">
+	  <link rel="shortcut icon" type="image/x-icon" href="../pages/assets/img/favicons/favicon.ico">
+	  <link rel="manifest" href="../pages/assets/img/favicons/manifest.json">
+	  <meta name="msapplication-TileImage" content="../pages/assets/img/favicons/mstile-150x150.png">
+	  <meta name="theme-color" content="#ffffff">
 
-  <!-- ===============================================-->
-  <!--    Stylesheets-->
-  <!-- ===============================================-->
-  <link href="/pages/assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900"
-    rel="stylesheet">
-  <link href="/pages/assets/lib/fancybox/jquery.fancybox.min.css" rel="stylesheet">
-  <link href="/pages/assets/css/theme.css" rel="stylesheet">
+	  <!-- ===============================================-->
+	  <!--    Stylesheets-->
+	  <!-- ===============================================-->
+	  <link href="../pages/assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900"
+		rel="stylesheet">
+	  <link href="../pages/assets/lib/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+	  <link href="../pages/assets/css/theme.css" rel="stylesheet">
+  
+  
   <style>
     .btn-outline-primary{
       cursor: pointer;
@@ -46,7 +51,8 @@
       border-color: #000;
     }
   </style>
-        <!-- define page-specifc extrahead-->
+	<!--This two was missed in base-->
+
 </head>
 
 <body class="has-sidemenu overflow-hidden-x">
@@ -59,12 +65,16 @@
     data-zanim-xs='{"from":{"opacity":1,"y":-43},"to":{"opacity":1,"y":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}'
     data-zanim-trigger="scroll" data-exclusive="true">
     <div class="fancynavbar-togglerbar bg-black">
-		<a class="fancynavbar-brand" href="index.html"><img
-          class="fancynavbar-brand-img" src="/pages/assets/img/imageonline-co-textimage_corben700.png" alt="" width="30" height="30"
+		
+		
+		 
+			<a class="fancynavbar-brand" href="../index.html">
+		
+		<img
+          class="fancynavbar-brand-img" src="../wallace/images/imageonline-co-textimage_corben700.png" alt="" width="30" height="30"
           data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}'
           data-zanim-trigger="scroll" />
           
-        
         <!--You can use icon or text logo as well-->
         <!--<span class='fab fa-superpowers fs-3'></span>-->
         <!--<span class='logo-sparrow'>S</span>-->
@@ -114,6 +124,14 @@
           
           
           <li class=" fancynav-item">
+            <a class="fancynav-link" href="../projects_cn/">
+              <span class="fancynav-link-content">研究方向</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
             <a class="fancynav-link" href="../team/">
               <span class="fancynav-link-content">Team</span>
             </a>
@@ -144,8 +162,15 @@
           </li>
           
           
+          
+          <li class="current fancynav-item">
+            <a class="fancynav-link" href="./">
+              <span class="fancynav-link-content">News</span>
+            </a>
+          </li>
+          
+          
         
-        <li class="fancynav-item"><a class="fancynav-link" href="http://127.0.0.1:8001/"><span class="fancynav-link-content">News</span></a></li>
       </ul>
     </div>
   </nav>
@@ -161,6 +186,116 @@
   <main class="main min-vh-100" id="top">
     <!-- <section> begin ============================-->
     
+
+      <!-- ============================================-->
+      <!-- Preloader ==================================-->
+      <div class="preloader" id="preloader">
+          <div class="loader">
+              <div class="line-scale-pulse-out-rapid">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+              </div>
+          </div>
+      </div><!-- ============================================-->
+      <!-- End of Preloader ===========================-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="bg-light pt-8 pb-7 pt-lg-6 pb-lg-5 pt-xl-8 pb-xl-7">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-xl-5">
+                      <h1 class="fs-3 fs-sm-4">News</h1>
+                      <p class="lead">These modular elements can be readily used and customized in every layout across pages.</p>
+                  </div>
+              </div>
+          </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+      <section class="py-0">
+          <div class="container">
+              <div class="row justify-content-between">
+                  <div class="col-lg-10 py-6">
+                      <div class="row">
+                          <div class="col-lg-3">
+                              <nav class="inner-link sticky-top bg-white">
+                                  <ul class="nav nav-pills py-3 flex-column">
+                                      <li class="nav-item active"><a class="nav-link active" href="#Section-1">Academic</a></li>
+                                      <li class="nav-item"><a class="nav-link" href="#Section-2">Member</a></li>
+                                      <li class="nav-item"><a class="nav-link" href="#Section-3">Others</a></li>
+                                      <li class="nav-item"><a class="nav-link" href="./oldnews.html">OldNews</a></li>
+                                  </ul>
+                              </nav>
+                          </div>
+
+                          <div class="col">
+
+
+                              <div id="Section-1">
+                                  <h4 class="mt-8 mb-4">Academic</h4>
+<!--                                  复制下面的内容，在第一个[]中填入日期，第二个[]中填入内容-->
+<!--                                  <p><code>[]</code> []</p>                  -->
+
+<!--                     Academic News                                 -->
+<!--                ========Start==========                            -->
+<!--                =======================                            -->
+
+                                  <p><code>[9.13.2021]</code> [Minxian Wang's paper was accepted by Nature. Minxian Wang's paper was accepted by Nature. Minxian Wang's paper was accepted by Nature. Minxian Wang's paper was accepted by Nature. Minxian Wang's paper was accepted by Nature. Minxian Wang's paper was accepted by Nature.]</p>
+                                  <p><img src="../pages/assets/img/blog-2.jpg" width="342"> </p>
+                                  <p><code>[8.13.2021]</code> [Minxian Wang's paper was accepted by Nature]</p>
+
+<!--                     Academic News                                 -->
+<!--                =========End==========                             -->
+<!--                =======================                            -->
+                              </div>
+
+
+                              <div id="Section-2">
+                                  <h4 class="mt-8 mb-4">Member</h4>
+<!--                                  复制下面的内容，在第一个[]中填入日期，第二个[]中填入内容-->
+<!--                                  <p><code>[]</code> []</p>        -->
+
+<!--                     Member News                                   -->
+<!--                ========Start==========                            -->
+<!--                =======================                            -->
+
+                                  <p><code>[9.13.2021]</code> Wang joined the group as a master student. Wang joined the group as a master student. Wang joined the group as a master student. Wang joined the group as a master student. Wang joined the group as a master student. Wang joined the group as a master student. Wang joined the group as a master student. Wang joined the group as a master student.</p>
+
+<!--                     Member News                                   -->
+<!--                =========End==========                             -->
+<!--                =======================                            -->
+                              </div>
+
+
+                              <div id="Section-3">
+                                  <h4 class="mt-8 mb-4">Others</h4>
+<!--                                  复制下面的内容，在第一个[]中填入日期，第二个[]中填入内容-->
+<!--                                  <p><code>[]</code> []</p>        -->
+
+<!--                     Other News                                    -->
+<!--                ========Start==========                            -->
+<!--                =======================                            -->
+
+                                  <p><code>[1.1.2021]</code> The team held a New Year party。</p>
+                                  <p><code>[1.1.2021]</code> The team held a New Year party.The team held a New Year party。The team held a New Year party.The team held a New Year party.</p>
+                                  <p><code>[1.1.2021]</code> The team held a New Year party。</p>
+
+<!--                     Other News                                    -->
+<!--                =========End==========                             -->
+<!--                =======================                            -->
+                               </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+
     
 
   </main><!-- ===============================================-->
@@ -183,12 +318,15 @@
               data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":1.05}'></span></a>
         </div>
         <div class="col-lg-4 text-lg-left mt-4 mt-lg-0">
-          <p class="fs--1 text-uppercase ls font-weight-bold mb-0">Copyright &copy; 2020 Sparrow&trade; inc.</p>
+          <p class="fs--1 text-uppercase ls font-weight-bold mb-0">
+			  Copyright &copy; 2021 Wang Lab <br />
+			  <a href="http://www.big.cas.cn/" target="blank" class="text-600">@ Beijing Institute of Genomics, CAS. </a>
+			  </p>
         </div>
         <div class="col-lg-4 text-lg-right order-lg-2 mt-2 mt-lg-0">
           <p class="fs--1 text-uppercase ls font-weight-bold mb-0">Made with<span
               class="text-danger fas fa-heart mx-1"></span>by <a class="text-600"
-              href="https://themewagon.com/">Themewagon</a></p>
+              href="#">Wallace Wang</a></p>
         </div>
       </div>
     </div>
@@ -230,7 +368,8 @@
         //document.getElementById('prev').addEventListener('click',jump);
         //document.getElementById('next').addEventListener('click',jump);
     </script>
-    <script src="../js/base.js" defer></script>
+    <!--wavefancy@gmail.com-->
+    <!--<script src="../js/base.js" defer></script>-->
     <script src="../search/main.js" defer></script>
   <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -299,26 +438,31 @@
   <!-- ===============================================-->
   <!--    JavaScripts-->
   <!-- ===============================================-->
-  <script src="/pages/assets/js/jquery.min.js"></script>
-  <script src="/pages/assets/js/popper.min.js"></script>
-  <script src="/pages/assets/js/bootstrap.js"></script>
-  <script src="/pages/assets/js/plugins.js"></script>
-  <script src="/pages/assets/lib/loaders.css/loaders.css.js"></script>
-  <script src="/pages/assets/js/stickyfill.min.js"></script>
-  <script src="/pages/assets/lib/is_js/is.min.js"></script>
-  <script src="/pages/assets/lib/jtap/jquery.tap.js"></script>
-  <script src="/pages/assets/js/rellax.min.js"></script>
-  <script src="/pages/assets/lib/fancybox/jquery.fancybox.min.js"></script>
-  <script src="/pages/assets/lib/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="/pages/assets/lib/isotope-packery/packery-mode.pkgd.min.js"></script>
-  <script src="/pages/assets/js/theme.js"></script>
-  <script src="../js/base.js"></script>
+   
+	  <script src="../pages/assets/js/jquery.min.js"></script>
+	  <script src="../pages/assets/js/popper.min.js"></script>
+	  <script src="../pages/assets/js/bootstrap.js"></script>
+	  <script src="../pages/assets/js/plugins.js"></script>
+	  <script src="../pages/assets/lib/loaders.css/loaders.css.js"></script>
+	  <script src="../pages/assets/js/stickyfill.min.js"></script>
+	  <script src="../pages/assets/lib/is_js/is.min.js"></script>
+	  <script src="../pages/assets/lib/jtap/jquery.tap.js"></script>
+	  <script src="../pages/assets/js/rellax.min.js"></script>
+	  <script src="../pages/assets/lib/fancybox/jquery.fancybox.min.js"></script>
+	  <script src="../pages/assets/lib/isotope-layout/isotope.pkgd.min.js"></script>
+	  <script src="../pages/assets/lib/isotope-packery/packery-mode.pkgd.min.js"></script>
+	  <script src="../pages/assets/js/theme.js"></script>
+	  <!--wavefancy@gmail.com-->
+	  <!--<script src="../js/base.js"></script>-->
+	  
+	  <script src="../pages/assets/lib/owl.carousel/owl.carousel.js"></script>
+	  <script src="../pages/assets/lib/lightbox2/js/lightbox.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
+	  <script src="../pages/assets/js/progressbar.min.js"></script>
+	  <script src="../pages/assets/js/typed.js"></script>
   
-  <script src="/pages/assets/lib/owl.carousel/owl.carousel.js"></script>
-  <script src="/pages/assets/lib/lightbox2/js/lightbox.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
-  <script src="/pages/assets/js/progressbar.min.js"></script>
-  <script src="/pages/assets/js/typed.js"></script>
+  
+  
 </body>
 
 </html>
