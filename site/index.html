@@ -15,22 +15,22 @@
   <!--    Favicons-->
   <!-- ===============================================-->
    
-	  <link rel="apple-touch-icon" sizes="180x180" href="pages/assets/img/favicons/apple-touch-icon.png">
-	  <link rel="icon" type="image/png" sizes="32x32" href="pages/assets/img/favicons/favicon-32x32.png">
-	  <link rel="icon" type="image/png" sizes="16x16" href="pages/assets/img/favicons/favicon-16x16.png ">
-	  <link rel="shortcut icon" type="image/x-icon" href="pages/assets/img/favicons/favicon.ico">
-	  <link rel="manifest" href="pages/assets/img/favicons/manifest.json">
-	  <meta name="msapplication-TileImage" content="pages/assets/img/favicons/mstile-150x150.png">
+	  <link rel="apple-touch-icon" sizes="180x180" href="/pages/assets/img/favicons/apple-touch-icon.png">
+	  <link rel="icon" type="image/png" sizes="32x32" href="/pages/assets/img/favicons/favicon-32x32.png">
+	  <link rel="icon" type="image/png" sizes="16x16" href="/pages/assets/img/favicons/favicon-16x16.png ">
+	  <link rel="shortcut icon" type="image/x-icon" href="/pages/assets/img/favicons/favicon.ico">
+	  <link rel="manifest" href="/pages/assets/img/favicons/manifest.json">
+	  <meta name="msapplication-TileImage" content="/pages/assets/img/favicons/mstile-150x150.png">
 	  <meta name="theme-color" content="#ffffff">
 
 	  <!-- ===============================================-->
 	  <!--    Stylesheets-->
 	  <!-- ===============================================-->
-	  <link href="pages/assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
+	  <link href="/pages/assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900"
 		rel="stylesheet">
-	  <link href="pages/assets/lib/fancybox/jquery.fancybox.min.css" rel="stylesheet">
-	  <link href="pages/assets/css/theme.css" rel="stylesheet">
+	  <link href="/pages/assets/lib/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+	  <link href="/pages/assets/css/theme.css" rel="stylesheet">
   
   
   
@@ -68,10 +68,7 @@
     data-zanim-trigger="scroll" data-exclusive="true">
     <div class="fancynavbar-togglerbar bg-black">
 		
-		
-			<a class="fancynavbar-brand" href="index.html">
-		
-		
+		<a class="fancynavbar-brand" href="/index.html">
 		<img
           class="fancynavbar-brand-img" src="wallace/images/imageonline-co-textimage_corben700.png" alt="" width="30" height="30"
           data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}'
@@ -126,8 +123,24 @@
           
           
           <li class=" fancynav-item">
+            <a class="fancynav-link" href="discoveries/">
+              <span class="fancynav-link-content">Discoveries</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
             <a class="fancynav-link" href="projects_cn/">
               <span class="fancynav-link-content">研究方向</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="discoveries_cn/">
+              <span class="fancynav-link-content">研究成果</span>
             </a>
           </li>
           
@@ -258,13 +271,23 @@
 						</div>
 					  </div>
 					</div>
+
 				  </div>
+					<div class="pt-5">
+						<a class="indicator indicator-down" data-zanim-timeline='{"delay":0.5}' data-zanim-trigger="scroll" href="#target-down" data-fancyscroll="data-fancyscroll">
+						<!--
+                        <span class="indicator-arrow indicator-arrow-one border-300 unu" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":0,"scale":2},"ease":"Back.easeOut","duration":0.4,"delay":0.4}'></span>
+                        -->
+							<span class="indicator-arrow indicator-arrow-two border-300 doi" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":10,"scale":2},"ease":"Back.easeOut","duration":0.25,"delay":0.25}'></span>
+							<span class="indicator-arrow indicator-arrow-two border-300 trei" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":20,"scale":2},"ease":"Back.easeOut","duration":0.1,"delay":0.1}'></span>
+						</a>
+                    </div>
 				</div>
 			  </div>
 			</div><!-- end of .container-->
 		  </section><!-- <section> close ============================-->
 		<!-- ============================================-->
-		
+          <div id="target-down"></div>
 	  <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section class="py-0 overflow-hidden" id="digital-we-do">
@@ -376,7 +399,7 @@
         <div class="col-lg-4 text-lg-right order-lg-2 mt-2 mt-lg-0">
           <p class="fs--1 text-uppercase ls font-weight-bold mb-0">Made with<span
               class="text-danger fas fa-heart mx-1"></span>by <a class="text-600"
-              href="#">Wallace Wang</a></p>
+              href="#">Wang lab team</a></p>
         </div>
       </div>
     </div>
@@ -488,31 +511,34 @@
   <!-- ===============================================-->
   <!--    JavaScripts-->
   <!-- ===============================================-->
-  
-  
-   
-	  <script src="pages/assets/js/jquery.min.js"></script>
-	  <script src="pages/assets/js/popper.min.js"></script>
-	  <script src="pages/assets/js/bootstrap.js"></script>
-	  <script src="pages/assets/js/plugins.js"></script>
-	  <script src="pages/assets/lib/loaders.css/loaders.css.js"></script>
-	  <script src="pages/assets/js/stickyfill.min.js"></script>
-	  <script src="pages/assets/lib/is_js/is.min.js"></script>
-	  <script src="pages/assets/lib/jtap/jquery.tap.js"></script>
-	  <script src="pages/assets/js/rellax.min.js"></script>
-	  <script src="pages/assets/lib/fancybox/jquery.fancybox.min.js"></script>
-	  <script src="pages/assets/lib/isotope-layout/isotope.pkgd.min.js"></script>
-	  <script src="pages/assets/lib/isotope-packery/packery-mode.pkgd.min.js"></script>
-	  <script src="pages/assets/js/theme.js"></script>
+ 
+	  <script src="/pages/assets/js/jquery.min.js"></script>
+	
+	  <script src="/pages/assets/js/bootstrap.js"></script>
+	  <!--plugin is a must have js file-->
+	  <script src="/pages/assets/js/plugins.min.js"></script>
+	  
+	  <script src="/pages/assets/lib/loaders.css/loaders.css.js"></script>
+	  <script src="/pages/assets/js/stickyfill.min.js"></script>
+	  <script src="/pages/assets/lib/is_js/is.min.js"></script>
+	  <script src="/pages/assets/lib/jtap/jquery.tap.js"></script>
+	  <script src="/pages/assets/js/rellax.min.js"></script>
+	  <script src="/pages/assets/lib/fancybox/jquery.fancybox.min.js"></script>
+	  <script src="/pages/assets/lib/isotope-layout/isotope.pkgd.min.js"></script>
+	  <script src="/pages/assets/lib/isotope-packery/packery-mode.pkgd.min.js"></script>
+	  <script src="/pages/assets/js/theme.js"></script>
 	  <!--wavefancy@gmail.com-->
 	  <!--<script src="js/base.js"></script>-->
+	  <!--
+	  <script src="/pages/assets/js/popper.min.js"></script>
+	  <script src="/pages/assets/lib/lightbox2/js/lightbox.min.js"></script>
+	  <script src="/pages/assets/js/progressbar.min.js"></script>
+	  -->
 	  
-	  <script src="./pages/assets/lib/owl.carousel/owl.carousel.js"></script>
-	  <script src="./pages/assets/lib/lightbox2/js/lightbox.min.js"></script>
+	  <script src="/pages/assets/lib/owl.carousel/owl.carousel.js"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
-	  <script src="./pages/assets/js/progressbar.min.js"></script>
-	  <script src="./pages/assets/js/typed.js"></script>
-  
+	  <script src="/pages/assets/js/typed.js"></script>
+	  
 </body>
 
 </html>

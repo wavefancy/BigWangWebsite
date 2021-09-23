@@ -16675,5 +16675,91 @@ a.text-white:hover, a.text-white:focus {
 /*-----------------------------------------------
 |   User Styles
 -----------------------------------------------*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+  -webkit-animation: mouse-scroll 1s infinite;
+  -moz-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
+
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+
+  animation-delay: .3s;
+  animation-direction: alternate;
+
+  margin-top: -6px;
+}
+
+.trei
+{
+  -webkit-animation-delay: .5s;
+  -moz-animation-delay: .5s;
+  -webkit-animation-direction: alternate;
+
+  animation-delay: .5s;
+  animation-direction: alternate;
+
+
+  margin-top: -6px;
+}
+
+
+
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  25%  { opacity: .25}
+  50%  { opacity: .5;}
+  75%  { opacity: .75;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  25%  { opacity: .25}
+  50%  { opacity: .5;}
+  75%  { opacity: .75;}
+  100% { opacity: 1;}
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  25%  { opacity: .25}
+  50%  { opacity: .5;}
+  75%  { opacity: .75;}
+  100% { opacity: 1;}
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  25%  { opacity: .25}
+  50%  { opacity: .5;}
+  75%  { opacity: .75;}
+  100% { opacity: 1;}
+}
 
 /*# sourceMappingURL=theme.css.map */

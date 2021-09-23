@@ -26,7 +26,9 @@ theme:
 nav:
   - Home: index.md
   - Projects: projects.md
+  - Discoveries: discoveries.md
   - 研究方向: projects_cn.md
+  - 研究成果: discoveries_cn.md
   - Team: team.md
   - Publications: publications.md
   - Contact: contact.md

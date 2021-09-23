@@ -1,4 +1,4 @@
 ---
-template: wallace/projects.html
+template: wallace/projects_cn.html
 title: Projects
 ---
