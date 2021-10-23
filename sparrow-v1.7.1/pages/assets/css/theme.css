@@ -16763,3 +16763,7 @@ a.text-white:hover, a.text-white:focus {
 }
 
 /*# sourceMappingURL=theme.css.map */
+#wechatQR{
+  position: absolute;
+  display: none;
+}
