@@ -1,4 +1,4 @@
 ---
-template: page-contact.html
-title: Material for MkDocs
+template: wallace/page-contact.html
+title: Map
 ---

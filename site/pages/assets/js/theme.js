@@ -2629,3 +2629,28 @@ var breakPointConst = spUtils.getCurrentScreanBreakpoint();
     });
   });
 })(jQuery);
+
+// display wechat QR
+function displayWechatQR(){
+  var img = document.getElementById("wechatQR");
+  var x = event.clientX + document.body.scrollLeft + 10;
+  var y = event.clientY + document.body.scrollTop - 10;
+
+  img.style.left = x + "px";
+  img.style.top = y + "px";
+  img.style.display = "block";
+}
+
+function vanishWechatQR(){
+  var img = document.getElementById("wechatQR");
+  img.style.display = "none";
+}
+
+function initMap() {
+  var center = new TMap.LatLng(40.005295,116.385572);
+  var map = new TMap.Map(document.getElementById("bigMap"),{
+    center: center,
+    zoom: 17.5,
+    pitch: 43.5,
+  });
+}
