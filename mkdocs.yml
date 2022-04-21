@@ -33,7 +33,7 @@ nav:
   - Publications: publications.md
   - Contact: contact.md
   - Join us: job_openings.md
-  - News: news.md
+  #- News: news.md
 
 markdown_extensions:
   - admonition
